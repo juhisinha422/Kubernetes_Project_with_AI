@@ -1,0 +1,93 @@
+# Kubernetes Project Using AI: -
++++++++++++++++++++++++++++++++
+
+# https://community.aws/content/2x5FTH4rEuKtWz1iRm8RwT9wJq5/installing-amazon-q-cli-setting-up-mcp-server
+Input --------- LLM ---------- output
+
+LLM: ChatGpt
+
+
+Amazon Q Installation: -
+-------------------------------------- 
+https://community.aws/content/2x5FTH4rEuKtWz1iRm8RwT9wJq5/installing-amazon-q-cli-setting-up-mcp-server
+
+# sudo apt-get update -y
+# sudo apt install libfuse2
+# curl --proto '=https' --tlsv1.2 -sSf https://desktop-release.q.us-east-1.amazonaws.com/latest/amazon-q.deb -o amazon-q.deb 
+# sudo apt install -y ./amazon-q.deb
+ # q login
+ # q
+ # sudo snap install astral-uv --classic
+ # cd ~/.aws/amazonq
+  # vi mcp.json
+  # q
+
+
+
+# mkdir kubernetes_mcp
+# cd kubernetes_mcp
+# q
+# !clear  (to clear screen)
+# cd .aws/amazonq/
+# sudo snap install astral-uv --classic
+
+
+# vi mcp.json
+# https://github.com/manusa/kubernetes-mcp-server
+# Awesome MCP Servers: https://mcpservers.org/
+
+{
+  "mcpServers": {
+    "kubernetes-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "kubernetes-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    }
+  }
+}
+
+
+
+# Restart the amazon q
+#  /quit
+
+# q
+# /tools (to check the status of servers load)
+
+# # Run the Kubernetes MCP server using uvx (in case you have uv and python installed)
+
+# !uvx kubernetes-mcp-server@latest
+
+ 
+# Note that we can use ! to run any command in amazon q.
+
+	can you make sure the KUBERNETES_MASTER environment is set to uvx kubernetes-mcp-server@latest
+	can you install kubectl for me
+	yes please set the environment variable and see if kubernetes mcp server works
+	/quit
+
+# q
+ 
+
+# we can see kubernetes server is initialized
+# check server status
+
+	/tools
+
+ 
+	which pods are running in my default namespace
+	can you create nginx pods in ns nginx
+	can you ensure the pod is running?
+	can you make sure I can access the pod nginx via browser?
+	can you expose the port on localhost or ec2-server?
+
+# Access the nginx site on browser: Public_IP:8080
+
+ 
+
+
+
