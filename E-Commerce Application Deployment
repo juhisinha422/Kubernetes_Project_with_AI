@@ -1,0 +1,21 @@
+# E-Commerce Application Deployment on Kubernetes: -
+------- 
+Note: 
+To push image to docker hub: - 
+# docker pull trainwithshubham/online_shop_app
+# docker image tag trainwithshubham/online_shop_app:latest juhisinha/online_shop_app:latest
+
+# docker push juhisinha/online_shop_app:latest
+
+
+# q
+	can you create a namespace called online-shop, in that create deployments with 3 replicas, and image juhisinha/online_shop_app:latest, the port for container is 80, make sure to hace service as well, deploy the app for me in kubernetes cluster
+
+ 
+
+# Access the site:
+# Public_IP:8090
+
+ 
+
+
