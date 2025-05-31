@@ -2,6 +2,8 @@
 ------- 
 Note: 
 To push image to docker hub: - 
+# docker login
+# Enter username: dockerhub_id and password or personal access token
 # docker pull trainwithshubham/online_shop_app
 # docker image tag trainwithshubham/online_shop_app:latest juhisinha/online_shop_app:latest
 
