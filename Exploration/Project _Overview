@@ -1,0 +1,16 @@
+🤖AI + Kubernetes Project
+
+I’m diving into an exciting AI + Kubernetes project that’s pushing my skills to the next level. Here’s what I learnt....
+
+🔹 Project Overview:
+I’m using Amazon Q to set up a kubernetes-mcp-server. This allows me to automate Kubernetes deployments using general-purpose commands to streamline the entire process and deploy my project seamlessly.
+
+Here’s my step-by-step plan:
+1. Set up Amazon Q.
+2. Configure Kubernetes MCP Server (create a file mcp.json in the .aws/amazonq directory and add the Kubernetes MCP server code from the GitHub repository).
+3. Install essential tools like kubectl, Docker, and Minikube.
+4. Write general-purpose commands to set up Kubernetes.
+5. Pull the necessary image from the DockerHub repository.
+6. Expose the ports and deploy it locally.
+7. If using AWS EC2, expose the ports accordingly.
+8. Finally, hit the URL in your browser to access the deployed application! 🚀
